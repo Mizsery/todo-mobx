@@ -1,0 +1,35 @@
+.container {
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: hsl(184, 96%, 79%);
+  box-shadow: 10px 10px 10px hsla(0, 41%, 7%, 0.363);
+}
+
+.text_container {
+  display: flex;
+  gap: 10px;
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: left;
+
+  & input {
+    padding: 8px 16px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: whitesmoke;
+    color: black;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

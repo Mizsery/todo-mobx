@@ -1,0 +1,48 @@
+$button-green: hsla(135, 77%, 55%);
+$button-red: hsla(0, 74%, 52%);
+$button-orange: hsla(39, 100%, 52%);
+
+@mixin buttonHover($buttonHover: hsla(135, 77%, 55%, 1)) {
+  &:hover {
+    background: ($buttonHover);
+    opacity: 0.8;
+    color: #ffffff;
+  }
+  &:disabled {
+    background: rgb(71, 67, 67);
+    cursor: auto;
+    opacity: 1;
+    color: #949090;
+  }
+  &:focus {
+    border: 1px solid;
+    border-color: #21214e;
+  }
+}
+
+.button {
+  width: 200px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 32px;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.2s ease-out;
+  color: #000000;
+}
+
+.green {
+  background: $button-green;
+  @include buttonHover($buttonHover: $button-green);
+}
+
+.red {
+  background: $button-red;
+  @include buttonHover($buttonHover: $button-red);
+}
+
+.orange {
+  background: $button-orange;
+  @include buttonHover($buttonHover: $button-orange);
+}

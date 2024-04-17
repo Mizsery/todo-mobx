@@ -1,0 +1,10 @@
+.app_container {
+  height: 100%;
+  display: flex;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+  }
+}

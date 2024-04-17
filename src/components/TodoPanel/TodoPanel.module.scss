@@ -1,0 +1,31 @@
+.formContainer {
+  background: hsl(210, 68%, 91%);
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  & input {
+    padding: 8px 16px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: whitesmoke;
+    color: black;
+    text-align: center;
+    width: 100%;
+  }
+
+  & label {
+    color: black;
+    text-align: center;
+  }
+}
+
+.inputContainer {
+  display: flex;
+  gap: 20px;
+}
