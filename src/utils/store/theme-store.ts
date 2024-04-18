@@ -10,6 +10,6 @@ export default class ThemeStore {
   }
 
   isDarkMode = () => {
-    this.theme === 'dark' ? 'light' : 'dark';
+    this.theme === 'dark' ? (this.theme = 'light') : (this.theme = 'dark');
   };
 }
